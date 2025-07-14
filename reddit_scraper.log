@@ -1,0 +1,95 @@
+2025-07-14 13:10:33,237 - INFO - Scraping profile: https://www.reddit.com/user/kojied/
+2025-07-14 13:10:38,644 - INFO - Scraped 38 items.
+2025-07-14 13:10:38,645 - INFO - Generating persona...
+2025-07-14 13:10:38,847 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-07-14 13:11:32,388 - INFO - Scraping profile: https://www.reddit.com/user/kojied/
+2025-07-14 13:11:38,068 - INFO - Scraped 38 items.
+2025-07-14 13:11:38,068 - INFO - Generating persona...
+2025-07-14 13:11:40,583 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:11:40,590 - WARNING - Using fallback parsing for persona data
+2025-07-14 13:11:40,591 - INFO - Persona generated.
+2025-07-14 13:11:40,603 - INFO - Persona saved to output\kojied_persona.txt
+2025-07-14 13:11:40,604 - INFO - Scraping profile: https://www.reddit.com/user/Hungry-Move-6603/
+2025-07-14 13:11:45,306 - INFO - Scraped 11 items.
+2025-07-14 13:11:45,306 - INFO - Generating persona...
+2025-07-14 13:11:47,080 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:11:47,082 - WARNING - Using fallback parsing for persona data
+2025-07-14 13:11:47,082 - INFO - Persona generated.
+2025-07-14 13:11:47,083 - INFO - Persona saved to output\Hungry-Move-6603_persona.txt
+2025-07-14 13:20:31,500 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 13:20:36,845 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 13:20:36,845 - INFO - Generating user persona...
+2025-07-14 13:20:37,056 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-07-14 13:20:37,057 - ERROR - Error generating persona: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-07-14 13:20:37,058 - ERROR - Error processing https://www.reddit.com/user/kojied/: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-07-14 13:20:37,447 - INFO - Starting to scrape profile: https://www.reddit.com/user/Hungry-Move-6603/
+2025-07-14 13:20:43,159 - INFO - Successfully scraped 11 posts/comments
+2025-07-14 13:20:43,159 - INFO - Generating user persona...
+2025-07-14 13:20:43,223 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-07-14 13:20:43,224 - ERROR - Error generating persona: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-07-14 13:20:43,224 - ERROR - Error processing https://www.reddit.com/user/Hungry-Move-6603/: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-07-14 13:21:12,445 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 13:21:17,802 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 13:21:17,803 - INFO - Generating user persona...
+2025-07-14 13:21:20,121 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:21:20,130 - INFO - User persona generated successfully
+2025-07-14 13:21:20,131 - INFO - Persona written to output\kojied_persona.txt
+2025-07-14 13:21:20,521 - INFO - Starting to scrape profile: https://www.reddit.com/user/Hungry-Move-6603/
+2025-07-14 13:21:25,228 - INFO - Successfully scraped 11 posts/comments
+2025-07-14 13:21:25,229 - INFO - Generating user persona...
+2025-07-14 13:21:26,705 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:21:26,707 - INFO - User persona generated successfully
+2025-07-14 13:21:26,775 - INFO - Persona written to output\Hungry-Move-6603_persona.txt
+2025-07-14 13:44:40,376 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 13:44:45,662 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 13:44:45,662 - INFO - Generating enhanced user persona...
+2025-07-14 13:44:48,855 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:44:48,862 - INFO - Enhanced user persona generated successfully
+2025-07-14 13:44:48,863 - INFO - Enhanced persona written to output\kojied_persona.txt
+2025-07-14 13:47:00,376 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 13:47:00,377 - ERROR - Error processing https://www.reddit.com/r/developersIndia/: Invalid Reddit profile URL: https://www.reddit.com/r/developersIndia/
+2025-07-14 13:47:49,118 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 13:47:49,119 - ERROR - Error processing https://www.reddit.com/r/developersIndia/: Invalid Reddit profile URL: https://www.reddit.com/r/developersIndia/
+2025-07-14 13:54:54,780 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 13:54:55,140 - ERROR - Error scraping post from https://www.reddit.com/r/developersIndia/submitted/: 404 Client Error: Not Found for url: https://www.reddit.com/r/developersIndia/submitted.json
+2025-07-14 13:54:57,565 - INFO - Successfully scraped 24 posts/comments
+2025-07-14 13:54:57,565 - INFO - Generating enhanced user persona...
+2025-07-14 13:54:59,713 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 13:54:59,719 - INFO - Enhanced user persona generated successfully
+2025-07-14 13:54:59,719 - ERROR - Error processing https://www.reddit.com/r/developersIndia/: [Errno 22] Invalid argument: 'output\\https://www.reddit.com/r/developersIndia_persona.txt'
+2025-07-14 14:02:39,422 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 14:02:39,422 - ERROR - Error processing https://www.reddit.com/r/developersIndia/: Invalid Reddit profile URL: https://www.reddit.com/r/developersIndia/
+2025-07-14 14:07:38,212 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 14:07:38,534 - ERROR - Error scraping post from https://www.reddit.com/r/developersIndia/submitted/: 404 Client Error: Not Found for url: https://www.reddit.com/r/developersIndia/submitted.json
+2025-07-14 14:07:40,944 - INFO - Successfully scraped 24 posts/comments
+2025-07-14 14:07:40,945 - INFO - Generating enhanced user persona...
+2025-07-14 14:07:43,078 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 14:07:43,084 - INFO - Enhanced user persona generated successfully
+2025-07-14 14:07:43,085 - INFO - Enhanced persona written to output\r_developersIndia_persona.txt
+2025-07-14 14:36:25,187 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 14:36:30,459 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 14:36:30,460 - INFO - Generating enhanced user persona...
+2025-07-14 14:36:33,858 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 14:36:33,864 - INFO - Enhanced user persona generated successfully
+2025-07-14 14:36:33,865 - INFO - Enhanced persona written to output\kojied_persona.txt
+2025-07-14 14:36:34,254 - INFO - Starting to scrape profile: https://www.reddit.com/r/developersIndia/
+2025-07-14 14:36:34,549 - ERROR - Error scraping post from https://www.reddit.com/r/developersIndia/submitted/: 404 Client Error: Not Found for url: https://www.reddit.com/r/developersIndia/submitted.json
+2025-07-14 14:36:36,947 - INFO - Successfully scraped 24 posts/comments
+2025-07-14 14:36:36,948 - INFO - Generating enhanced user persona...
+2025-07-14 14:36:37,010 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-14 14:36:37,011 - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-07-14 14:36:44,728 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 14:36:44,729 - INFO - Enhanced user persona generated successfully
+2025-07-14 14:36:44,730 - INFO - Enhanced persona written to output\r_developersIndia_persona.txt
+2025-07-14 16:46:56,480 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 16:47:02,378 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 16:47:02,378 - INFO - Generating enhanced user persona...
+2025-07-14 16:47:05,132 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 16:47:05,138 - INFO - Enhanced user persona generated successfully
+2025-07-14 16:47:05,139 - INFO - Enhanced persona written to output\kojied_persona.txt
+2025-07-14 16:47:05,537 - INFO - Starting to scrape profile: https://www.reddit.com/user/Hungry-Move-6603/
+2025-07-14 16:47:11,454 - INFO - Successfully scraped 11 posts/comments
+2025-07-14 16:47:11,454 - INFO - Generating enhanced user persona...
+2025-07-14 16:47:12,989 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 16:47:12,990 - INFO - Enhanced user persona generated successfully
+2025-07-14 16:47:12,991 - INFO - Enhanced persona written to output\Hungry-Move-6603_persona.txt

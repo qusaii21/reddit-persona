@@ -1,0 +1,141 @@
+USER PERSONA FOR REDDIT USER: Hungry-Move-6603
+============================================================
+Generated on: 2025-07-14 16:47:12
+============================================================
+
+BASIC DEMOGRAPHICS
+--------------------
+Name: Indian Urbanite
+Age Range: 25-40
+Location: India (likely Lucknow or Delhi)
+Occupation: Professional
+Status: Professional
+Tier: Intermediate
+Archetype: The Sage
+
+INTERESTS
+--------------------
+• cars
+• food
+• social issues
+
+PERSONALITY TRAITS
+--------------------
+• observant
+• concerned
+• humorous
+
+PERSONALITY ASSESSMENT (MBTI-Style)
+-----------------------------------
+Introversion: 50%
+  (0% = Extremely Extroverted, 100% = Extremely Introverted)
+
+Intuition: 60%
+  (0% = Extremely Sensing, 100% = Extremely Intuitive)
+
+Feeling: 40%
+  (0% = Extremely Thinking, 100% = Extremely Feeling)
+
+Perceiving: 70%
+  (0% = Extremely Judging, 100% = Extremely Perceiving)
+
+GOALS & ASPIRATIONS
+--------------------
+• improve quality of life
+• address social issues
+
+MOTIVATIONS (Intensity Scores)
+------------------------------
+• Achievement: 60/100
+• Social Connection: 70/100
+• Knowledge Seeking: 80/100
+• Creative Expression: 30/100
+• Helping Others: 50/100
+• Recognition: 20/100
+
+FRUSTRATIONS & PAIN POINTS
+------------------------------
+• poor quality food
+• corruption
+
+BEHAVIOR & HABITS
+--------------------
+• frequent posting
+• engaging in discussions
+
+PREFERRED SUBREDDITS
+--------------------
+• r/r/lucknow
+• r/r/nagpur
+• r/r/IndiaUnfilter
+
+BEHAVIORAL INSIGHTS
+--------------------
+Communication Style: informal, conversational
+
+Technology Comfort: High
+
+Social Media Behavior: active, opinionated
+
+SUPPORTING EVIDENCE & CITATIONS
+===================================
+The following quotes from the user's posts and comments support each characteristic:
+
+INTERESTS:
+  • 'cars'
+  • 'food'
+  • 'social issues'
+
+PERSONALITY TRAITS:
+  • 'observant'
+  • 'concerned'
+  • 'humorous'
+
+GOALS:
+  • 'improve quality of life'
+  • 'address social issues'
+
+FRUSTRATIONS:
+  • 'poor quality food'
+  • 'corruption'
+
+OCCUPATION:
+  • 'business purposes'
+
+LOCATION:
+  • 'LKO'
+  • 'Delhi'
+
+AGE RANGE:
+  • 'Unknown'
+
+STATUS:
+  • 'Professional'
+
+TIER:
+  • 'Intermediate'
+
+ARCHETYPE:
+  • 'The Sage'
+
+COMMUNICATION STYLE:
+  • 'informal, conversational'
+
+TECHNOLOGY COMFORT:
+  • 'High'
+
+SOCIAL MEDIA BEHAVIOR:
+  • 'active, opinionated'
+
+MOTIVATIONS:
+  • 'achievement'
+  • 'social_connection'
+
+BEHAVIOR HABITS:
+  • 'frequent posting'
+  • 'engaging in discussions'
+
+PERSONALITY PERCENTAGES:
+  • 'introversion'
+  • 'intuition'
+

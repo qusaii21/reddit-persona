@@ -1,0 +1,134 @@
+USER PERSONA FOR REDDIT USER: kojied
+============================================================
+Generated on: 2025-07-14 16:47:05
+============================================================
+
+BASIC DEMOGRAPHICS
+--------------------
+Name: Tech-Savvy Individual
+Age Range: 25-35
+Location: New York City
+Occupation: Software Developer/Technologist
+Status: Professional
+Tier: Intermediate
+Archetype: The Explorer
+
+INTERESTS
+--------------------
+• Technology
+• Gaming
+• Innovation
+• Sustainability
+
+PERSONALITY TRAITS
+--------------------
+• Curious
+• Adventurous
+• Analytical
+
+PERSONALITY ASSESSMENT (MBTI-Style)
+-----------------------------------
+Introversion: 60%
+  (0% = Extremely Extroverted, 100% = Extremely Introverted)
+
+Intuition: 80%
+  (0% = Extremely Sensing, 100% = Extremely Intuitive)
+
+Feeling: 40%
+  (0% = Extremely Thinking, 100% = Extremely Feeling)
+
+Perceiving: 70%
+  (0% = Extremely Judging, 100% = Extremely Perceiving)
+
+GOALS & ASPIRATIONS
+--------------------
+• Staying updated on new technologies
+• Improving gaming experiences
+• Exploring sustainable practices
+
+MOTIVATIONS (Intensity Scores)
+------------------------------
+• Achievement: 70/100
+• Social Connection: 50/100
+• Knowledge Seeking: 90/100
+• Creative Expression: 60/100
+• Helping Others: 40/100
+• Recognition: 20/100
+
+FRUSTRATIONS & PAIN POINTS
+------------------------------
+• Technical difficulties
+• Lack of innovation
+• Environmental concerns
+
+BEHAVIOR & HABITS
+--------------------
+• Frequent posting on tech-related topics
+• Engaging in discussions on sustainability
+
+PREFERRED SUBREDDITS
+--------------------
+• r/r/VisionPro
+• r/r/GenZ
+• r/r/ClimateOffensive
+
+BEHAVIORAL INSIGHTS
+--------------------
+Communication Style: Informal, conversational, and tech-savvy
+
+Technology Comfort: High
+
+Social Media Behavior: Active, engaged, and opinionated
+
+SUPPORTING EVIDENCE & CITATIONS
+===================================
+The following quotes from the user's posts and comments support each characteristic:
+
+INTERESTS:
+  • 'Best blogs, tutorial channels to learn' (POST 3)
+
+PERSONALITY TRAITS:
+  • 'I feel that most people decide what to buy based on past experiences' (POST 11)
+
+GOALS:
+  • 'I’ve been trying to actually use the Vision Pro to get some work done' (POST 7)
+
+FRUSTRATIONS:
+  • 'I felt violated' (POST 1)
+
+OCCUPATION:
+  • 'I’m an iOS developer building in visionOS' (POST 3)
+
+LOCATION:
+  • 'New York City' (POST 1)
+
+AGE RANGE:
+  • 'GenZ' (POST 2)
+
+STATUS:
+  • 'I’ve been lurking in this channel for a while now' (POST 11)
+
+TIER:
+  • 'I’ve been trying to actually use the Vision Pro to get some work done' (POST 7)
+
+ARCHETYPE:
+  • 'What if we live in the void 800 century' (POST 8)
+
+COMMUNICATION STYLE:
+  • 'Hey I’m an iOS developer building in visionOS' (POST 3)
+
+TECHNOLOGY COMFORT:
+  • 'I just find this to be much easier than doing it on my Mac + display setup' (POST 5)
+
+SOCIAL MEDIA BEHAVIOR:
+  • 'I’ve been lurking in this channel for a while now' (POST 11)
+
+MOTIVATIONS:
+  • 'I want to transfer from Robinhood' (POST 13)
+
+BEHAVIOR HABITS:
+  • 'Frequent posting on tech-related topics' (Multiple posts)
+
+PERSONALITY PERCENTAGES:
+  • 'I feel that most people decide what to buy based on past experiences' (POST 11)
+
