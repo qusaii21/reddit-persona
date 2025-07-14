@@ -1,15 +1,3 @@
-
-"""
-Reddit User Persona Generator (Enhanced Version)
-
-This script scrapes Reddit user profiles and generates detailed user personas
-using the latest LangChain v0.3 and Groq API for LLM processing.
-
-Author: Generated with Claude
-Date: July 14, 2025
-Version: 3.0 (Enhanced with additional persona sections)
-"""
-
 import os
 import re
 import json
@@ -196,18 +184,18 @@ class RedditScraper:
         """
         logger.info(f"Starting to scrape profile: {profile_url}")
         
-        # Validate URL
+        
         if not self._is_valid_reddit_url(profile_url):
             raise ValueError(f"Invalid Reddit profile URL: {profile_url}")
         
         posts = []
         
         try:
-            # Scrape posts
+         
             posts_url = f"{profile_url.rstrip('/')}/submitted/"
             posts.extend(self._scrape_content(posts_url, "post", max_posts // 2))
             
-            # Scrape comments
+           
             comments_url = f"{profile_url.rstrip('/')}/comments/"
             posts.extend(self._scrape_content(comments_url, "comment", max_posts // 2))
             
@@ -231,7 +219,7 @@ class RedditScraper:
         posts = []
         
         try:
-            # Add .json to get JSON response
+           
             json_url = f"{url.rstrip('/')}.json"
             
             response = self.session.get(json_url, timeout=30)
@@ -239,7 +227,7 @@ class RedditScraper:
             
             data = response.json()
             
-            # Handle different response structures
+           
             if isinstance(data, dict) and 'data' in data:
                 items = data['data']['children']
             elif isinstance(data, list):
@@ -254,7 +242,7 @@ class RedditScraper:
                 try:
                     post_data = item['data']
                     
-                    # Extract post information
+                    
                     post = RedditPost(
                         title=post_data.get('title', post_data.get('link_title', 'No Title')),
                         content=self._clean_content(post_data.get('selftext', post_data.get('body', ''))),
@@ -267,7 +255,7 @@ class RedditScraper:
                         post_type=content_type
                     )
                     
-                    # Only add if there's meaningful content
+                    
                     if post.content.strip() and len(post.content) > 10:
                         posts.append(post)
                         
@@ -275,7 +263,7 @@ class RedditScraper:
                     logger.warning(f"Error parsing {content_type}: {e}")
                     continue
             
-            time.sleep(self.delay)  # Rate limiting
+            time.sleep(self.delay)  
             
         except Exception as e:
             logger.error(f"Error scraping {content_type} from {url}: {e}")
@@ -287,13 +275,13 @@ class RedditScraper:
         if not content:
             return ""
         
-        # Remove markdown formatting
-        content = re.sub(r'\*\*(.*?)\*\*', r'\1', content)  # Bold
-        content = re.sub(r'\*(.*?)\*', r'\1', content)      # Italic
-        content = re.sub(r'~~(.*?)~~', r'\1', content)      # Strikethrough
-        content = re.sub(r'(.*?)', r'\1', content)        # Code
+       
+        content = re.sub(r'\*\*(.*?)\*\*', r'\1', content)  
+        content = re.sub(r'\*(.*?)\*', r'\1', content)      
+        content = re.sub(r'~~(.*?)~~', r'\1', content)     
+        content = re.sub(r'(.*?)', r'\1', content)        
         
-        # Remove excessive whitespace
+        
         content = re.sub(r'\n\s*\n', '\n\n', content)
         content = content.strip()
         
@@ -320,7 +308,7 @@ class PersonaGenerator:
     def _setup_chain(self):
         """Setup the LangChain chain for persona generation using v0.3 patterns."""
         
-        # System prompt for persona generation
+       
         system_prompt = """
         You are an expert user researcher and persona analyst. Your task is to analyze Reddit posts and comments to create a comprehensive, enhanced user persona.
 
@@ -336,7 +324,7 @@ class PersonaGenerator:
         Return your analysis in VALID JSON format with the exact structure specified in the human message.
         """
         
-        # Human prompt template
+       
         human_prompt = """
         Analyze the following Reddit posts and comments to create a detailed, enhanced user persona:
 
@@ -433,13 +421,13 @@ class PersonaGenerator:
         Ensure JSON is valid and properly formatted
         """
         
-        # Create the prompt template
+     
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
             ("human", human_prompt)
         ])
         
-        # Create the chain using the pipe operator (LangChain v0.3 pattern)
+       
         self.chain = (
             {"reddit_data": RunnablePassthrough()}
             | self.prompt
@@ -451,14 +439,14 @@ class PersonaGenerator:
         """Generate a user persona from Reddit posts."""
         logger.info("Generating enhanced user persona...")
         
-        # Prepare data for LLM
+        
         reddit_data = self._format_posts_for_llm(posts)
         
         try:
-            # Generate persona using the chain
+            
             result = self.chain.invoke(reddit_data)
             
-            # Convert Pydantic model to UserPersona dataclass
+           
             persona = UserPersona(
                 name=result.name,
                 age_range=result.age_range,
@@ -493,7 +481,7 @@ class PersonaGenerator:
         formatted_posts = []
         
         for i, post in enumerate(posts, 1):
-            # Truncate content to prevent token limit issues
+           
             content = post.content[:800] + "..." if len(post.content) > 800 else post.content
             
             formatted_post = f"""
@@ -526,7 +514,7 @@ class PersonaWriter:
             f.write(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write("=" * 60 + "\n\n")
             
-            # Basic Demographics
+          
             f.write("BASIC DEMOGRAPHICS\n")
             f.write("-" * 20 + "\n")
             f.write(f"Name: {persona.name}\n")
@@ -537,21 +525,21 @@ class PersonaWriter:
             f.write(f"Tier: {persona.tier}\n")
             f.write(f"Archetype: {persona.archetype}\n\n")
             
-            # Interests
+          
             f.write("INTERESTS\n")
             f.write("-" * 20 + "\n")
             for interest in persona.interests:
                 f.write(f"• {interest}\n")
             f.write("\n")
             
-            # Personality Traits
+            
             f.write("PERSONALITY TRAITS\n")
             f.write("-" * 20 + "\n")
             for trait in persona.personality_traits:
                 f.write(f"• {trait}\n")
             f.write("\n")
             
-            # MBTI-Style Personality Percentages
+           
             f.write("PERSONALITY ASSESSMENT (MBTI-Style)\n")
             f.write("-" * 35 + "\n")
             f.write(f"Introversion: {persona.personality_percentages.get('introversion', 50)}%\n")
@@ -563,55 +551,55 @@ class PersonaWriter:
             f.write(f"Perceiving: {persona.personality_percentages.get('perceiving', 50)}%\n")
             f.write(f"  (0% = Extremely Judging, 100% = Extremely Perceiving)\n\n")
             
-            # Goals
+          
             f.write("GOALS & ASPIRATIONS\n")
             f.write("-" * 20 + "\n")
             for goal in persona.goals:
                 f.write(f"• {goal}\n")
             f.write("\n")
             
-            # Motivations with Intensity
+           
             f.write("MOTIVATIONS (Intensity Scores)\n")
             f.write("-" * 30 + "\n")
             for motivation, intensity in persona.motivations.items():
                 f.write(f"• {motivation.replace('_', ' ').title()}: {intensity}/100\n")
             f.write("\n")
             
-            # Frustrations
+            
             f.write("FRUSTRATIONS & PAIN POINTS\n")
             f.write("-" * 30 + "\n")
             for frustration in persona.frustrations:
                 f.write(f"• {frustration}\n")
             f.write("\n")
             
-            # Behavior & Habits
+          
             f.write("BEHAVIOR & HABITS\n")
             f.write("-" * 20 + "\n")
             for habit in persona.behavior_habits:
                 f.write(f"• {habit}\n")
             f.write("\n")
             
-            # Preferred Subreddits
+         
             f.write("PREFERRED SUBREDDITS\n")
             f.write("-" * 20 + "\n")
             for subreddit in persona.preferred_subreddits:
                 f.write(f"• r/{subreddit}\n")
             f.write("\n")
             
-            # Behavioral Insights
+           
             f.write("BEHAVIORAL INSIGHTS\n")
             f.write("-" * 20 + "\n")
             f.write(f"Communication Style: {persona.communication_style}\n\n")
             f.write(f"Technology Comfort: {persona.technology_comfort}\n\n")
             f.write(f"Social Media Behavior: {persona.social_media_behavior}\n\n")
             
-            # Citations
+          
             f.write("SUPPORTING EVIDENCE & CITATIONS\n")
             f.write("=" * 35 + "\n")
             f.write("The following quotes from the user's posts and comments support each characteristic:\n\n")
             
             for category, citations in persona.citations.items():
-                if citations:  # Only show categories with citations
+                if citations:  
                     f.write(f"{category.upper().replace('_', ' ')}:\n")
                     for citation in citations:
                         f.write(f"  • {citation}\n")
@@ -623,19 +611,19 @@ class PersonaWriter:
 
 def process_single_user(profile_url: str, groq_api_key: str) -> str:
     """Process a single Reddit user and generate their enhanced persona."""
-    # Extract username from URL
+  
     username = profile_url.split('/user/')[-1].rstrip('/')
     
     print(f"\nProcessing user: {username}")
     print("-" * 50)
     
-    # Initialize components
+    
     scraper = RedditScraper(delay=2.0)
     generator = PersonaGenerator(groq_api_key)
     writer = PersonaWriter()
     
     try:
-        # Scrape profile
+       
         posts = scraper.scrape_profile(profile_url, max_posts=50)
         
         if not posts:
@@ -644,10 +632,10 @@ def process_single_user(profile_url: str, groq_api_key: str) -> str:
         
         print(f"Found {len(posts)} posts/comments")
         
-        # Generate enhanced persona
+       
         persona = generator.generate_persona(posts)
         
-        # Write to file
+       
         filepath = writer.write_persona_to_file(persona, username)
         
         print(f"✓ Enhanced persona generated and saved to: {filepath}")
@@ -667,7 +655,7 @@ def main():
     
     args = parser.parse_args()
     
-    # Check for required environment variables
+    
     groq_api_key = os.getenv('GROQ_API_KEY')
     if not groq_api_key:
         print("Error: GROQ_API_KEY environment variable is required")
@@ -685,7 +673,7 @@ def main():
         if profile_url:
             profile_urls = [profile_url]
         else:
-            # Default example users
+            
             profile_urls = [
                 "https://www.reddit.com/user/kojied/",
                 "https://www.reddit.com/user/Hungry-Move-6603/"

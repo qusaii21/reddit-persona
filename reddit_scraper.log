@@ -93,3 +93,15 @@
 2025-07-14 16:47:12,989 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-07-14 16:47:12,990 - INFO - Enhanced user persona generated successfully
 2025-07-14 16:47:12,991 - INFO - Enhanced persona written to output\Hungry-Move-6603_persona.txt
+2025-07-14 17:09:24,496 - INFO - Starting to scrape profile: https://www.reddit.com/user/kojied/
+2025-07-14 17:09:29,885 - INFO - Successfully scraped 38 posts/comments
+2025-07-14 17:09:29,885 - INFO - Generating enhanced user persona...
+2025-07-14 17:09:30,071 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-14 17:09:30,072 - ERROR - Error generating persona: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-07-14 17:09:30,072 - ERROR - Error processing https://www.reddit.com/user/kojied/: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-07-14 17:09:30,480 - INFO - Starting to scrape profile: https://www.reddit.com/user/Hungry-Move-6603/
+2025-07-14 17:09:35,158 - INFO - Successfully scraped 11 posts/comments
+2025-07-14 17:09:35,158 - INFO - Generating enhanced user persona...
+2025-07-14 17:09:35,213 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-14 17:09:35,214 - ERROR - Error generating persona: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-07-14 17:09:35,214 - ERROR - Error processing https://www.reddit.com/user/Hungry-Move-6603/: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
